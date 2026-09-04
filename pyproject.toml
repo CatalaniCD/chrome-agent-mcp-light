@@ -1,0 +1,20 @@
+[project]
+name = "chrome-agent-mcp-light"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "chrome-agent>=0.5.8",
+    "mcp>=2.1.1",
+    "mcp[cli]>=1.8.0",
+    "prompt-toolkit>=3.0.51",
+    "python-dotenv>=1.1.0",
+]
+
+[project.scripts]
+chrome-agent-mcp-light = "chrome_agent_mcp_light:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
